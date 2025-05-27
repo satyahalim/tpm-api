@@ -1,0 +1,54 @@
+###
+GET http://localhost:5000/wish
+
+###
+POST http://localhost:5000/wish
+Content-Type: application/json
+
+{
+    "title":"iphone 13",
+    "price": 1300000,
+    "desc": "ini tuh udah wishlist termahal gw",
+    "image":"",
+    "category":"Electronic",
+    "priority":"Low",
+    "acquired":false
+}
+
+###
+PATCH http://localhost:5000/wish/1
+Content-Type: application/json
+
+{
+    "title":"iphone 13",
+    "price": 1300000,
+    "desc": "FINALLY UDAH DAPET",
+    "image":"",
+    "category":"Electronic",
+    "priority":"Low",
+    "acquired":true
+}
+
+###
+DELETE  http://localhost:5000/wish/1
+
+
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "username":"satya",
+    "password": "meongg"
+  
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"satya",
+    "password": "meongg"
+  
+}
