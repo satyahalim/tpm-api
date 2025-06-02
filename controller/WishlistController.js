@@ -17,6 +17,29 @@ async function getWish(req,res) {
     }  
 }
 
+async function getWishById(req, res) {
+  try {
+    const item = await Wishlist.findOne({ where: { id: req.params.id } });
+    if (!item) {
+      return res.status(404).json({
+        status: "Error",
+        message: " Wishlist not found 😮",
+      });
+    }
+
+    return res.status(200).json({
+      status: "Success",
+      message: "Wishlist retrieved",
+      data: item,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      status: "Error",
+      message: error.message,
+    });
+  }
+}
+
 //function untuk menambah wishlist ke apps
 async function createWish(req,res) {
     try {
