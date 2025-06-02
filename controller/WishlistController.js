@@ -104,4 +104,4 @@ async function acquired(req,res) {
     }
 }
 
-export {getWish,updateWish,createWish,deleteWish,acquired}
+export {getWish,getWishById,updateWish,createWish,deleteWish,acquired}
