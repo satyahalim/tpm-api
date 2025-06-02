@@ -4,6 +4,7 @@ import {getWish,updateWish,createWish,deleteWish,acquired} from "../controller/W
 const router = express.Router()
 
 router.get("/wish",getWish)
+router.get("/wish/:id",getWishById)
 router.post("/wish",createWish)
 router.patch("/wish/:id",updateWish)
 router.delete("/wish/:id",deleteWish)
