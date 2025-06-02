@@ -1,5 +1,5 @@
 import express from "express"
-import {getWish,updateWish,createWish,deleteWish,acquired} from "../controller/WishlistController.js"
+import {getWish,getWishById,updateWish,createWish,deleteWish,acquired} from "../controller/WishlistController.js"
 
 const router = express.Router()
 
