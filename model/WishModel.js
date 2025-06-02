@@ -7,7 +7,7 @@ const Wishlist = db.define(
         title : DataTypes.STRING,
         price : DataTypes.FLOAT,
         desc : DataTypes.TEXT,
-        image : DataTypes.BLOB,
+        image : DataTypes.TEXT,
         category : DataTypes.STRING,
         priority : DataTypes.STRING,
         acquired: {
